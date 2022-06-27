@@ -41,7 +41,7 @@ export function Header() {
           <span className={classNavItem}>LGPD</span>
         </nav>
         {navbarOpen ? (
-          <div className='bg-blue-900 fixed -top-full left-0 w-screen h-screen z-[80] p-8 translate-y-full transition-transform'>
+          <div className='bg-blue-900 fixed -top-full left-0 w-screen h-screen z-[80] p-8 translate-y-full transition duration-500 transform'>
             <span onClick={() => setNavbarOpen(false)}>
               <X size={32} color="#fff" />
             </span>
@@ -60,7 +60,7 @@ export function Header() {
             </div>
           </div>
         ) : (
-          <div className="flex-col items-center justify-center lg:flex hidden transition-transform" onClick={() => setNavbarOpen(true)}>
+          <div className="flex-col items-center justify-center lg:flex hidden transition duration-100 transform " onClick={() => setNavbarOpen(true)}>
             <span className='text-xs text-gray-600'>Menu</span>
             <List size={40} className="text-blue-900" />
           </div>

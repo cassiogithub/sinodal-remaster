@@ -1,10 +1,10 @@
 import { FacebookLogo, InstagramLogo } from "phosphor-react";
 
 export function Footer() {
-const navItemClass = 'cursor-pointer transition-transform hover:translate-x-1'
+const navItemClass = 'cursor-pointer transition-transform hover:translate-x-1 sm:text-xs'
   return (
-    <footer className="sticky top-[100vh] bg-blue-900 p-4">
-      <div className="flex justify-between text-white">
+    <footer className="sticky top-[100vh] bg-blue-900 p-4 ">
+      <div className="flex justify-between gap-2 text-white">
         <nav className="flex flex-col gap-2">
           <span className={navItemClass}>Sobre a Escola</span>
           <span className={navItemClass}>Estrutura</span>
