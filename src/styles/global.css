@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@media (max-width: 1279px) { 
+  html{
+    font-size: 87.5%;
+  }
+ }
 body {
   --webkit-font-smoothing: antialiased;
 }
